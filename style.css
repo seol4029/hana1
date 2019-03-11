@@ -1,0 +1,23 @@
+
+    @media(min-width:600px){
+        h1{
+            border-bottom: 5px solid purple;
+            margin-bottom: 0;
+            padding-left : 10px;
+        }
+        ol{
+            margin-top : 0px;
+        }
+        #a{
+            margin-top :0;
+            padding-left : 10px;
+            margin-top : 0px;
+        }
+        #container{
+            display : grid;
+            grid-template-columns: 200px 1fr;
+        }
+        #left{
+            border-right: 5px solid purple;
+        }
+    }
