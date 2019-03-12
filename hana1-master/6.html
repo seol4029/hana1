@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB - World Wide Web</title>
+        <meta charset ="utf-8">
+        <link rel="stylesheet" href="1style.css">
+
+        <script>
+            function toNight(){
+                document.querySelector('body').style.backgroundColor='black';
+                        document.querySelector('body').style.color='white';
+
+                        var i= 0;
+                        var links = document.querySelectorAll('a');
+
+                        while(i <links.length){
+                            links[i].style.color = 'white';
+                            i = i+1;
+                        }
+            }
+            function toDay(){
+                document.querySelector('body').style.backgroundColor='white';
+                        document.querySelector('body').style.color='black';
+
+                        var i= 0;
+                        var links = document.querySelectorAll('a');
+
+                        while(i <links.length){
+                            links[i].style.color = 'black';
+                            i = i+1;
+                        }
+            }
+        
+        </script>
+    </head>
+    <body>
+        
+        <h1>WEB</h1>
+            <div id = "container">
+            <ol>
+                <a href = '7.html'><li>Html</li></a>
+                <a href = '8.html'><li>JavaScript</li></a>
+                <a href = '9.html'><li>CSS</li></a>
+                <a href = '10.html'><li>Nodejs</li></a>
+            </ol>   
+
+            <div id = "article">
+                <input type="button" value="night" onclick="
+                    if(this.value === 'night'){
+                        toNight();                        
+                        this.value = 'day';                        
+                    }
+                    else{
+                        toDay();
+                        this.value = 'night';                   
+                    }
+                ">
+
+                <h2>World Wide Web</h2>
+                <br>
+                Happy birth day!<br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, blanditiis dolorum illo, unde laboriosam voluptatibus, autem deserunt tempore fugit ea mollitia sunt repudiandae facere odit repellendus. Alias ratione tenetur nam.
+            </div>
+        </div>
+
+    </body>
+</html>
