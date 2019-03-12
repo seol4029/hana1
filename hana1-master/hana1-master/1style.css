@@ -1,0 +1,23 @@
+            
+        @media(min-width : 600px){
+            h1{
+                border-bottom : solid blue 5px;
+                padding : 0px;
+                margin-bottom : 0;
+            }
+            ol{
+                border-right : solid skyblue 5px;
+                padding : 15px;
+                padding-top : 0; 
+                margin-top : 0;           
+            }
+            #container{
+                display :grid;
+                grid-template-columns: 150px 1fr;
+                margin-top : 0;   
+            } 
+            #article{
+                padding-top : 0;
+                margin-top : 0;
+            }   
+        }
